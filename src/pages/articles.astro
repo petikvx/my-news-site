@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Articles - My News Site" description="Browse our latest articles and news coverage across all categories.">
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Latest Articles</h1>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          Stay informed with our comprehensive coverage of news, technology, business, and local stories.
+        </p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors">All</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-colors">Local News</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-colors">World News</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-colors">Technology</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition-colors">Business</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Sample Article Cards -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">Technology</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Technology</span>
+              <span class="text-gray-500 text-sm ml-auto">2 hours ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">Breaking: Major Tech Announcement Shakes Industry</a>
+            </h3>
+            <p class="text-gray-600 mb-4">A groundbreaking development in technology has been announced today, promising to revolutionize how we interact with digital devices...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">World News</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">World</span>
+              <span class="text-gray-500 text-sm ml-auto">4 hours ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">Global Climate Summit Reaches Historic Agreement</a>
+            </h3>
+            <p class="text-gray-600 mb-4">World leaders have come together to sign a comprehensive agreement on climate change, marking a significant step forward...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">Business</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Business</span>
+              <span class="text-gray-500 text-sm ml-auto">6 hours ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">Market Analysis: Economic Trends for 2025</a>
+            </h3>
+            <p class="text-gray-600 mb-4">Our financial experts provide insights into the economic landscape and what it means for investors and businesses...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">Local News</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Local</span>
+              <span class="text-gray-500 text-sm ml-auto">8 hours ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">Community Center Opens New Facilities</a>
+            </h3>
+            <p class="text-gray-600 mb-4">The new community center expansion provides additional resources and activities for local residents...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">Sports</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Sports</span>
+              <span class="text-gray-500 text-sm ml-auto">12 hours ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">Local Team Advances to Championship</a>
+            </h3>
+            <p class="text-gray-600 mb-4">After an impressive season, our local team has secured their place in the championship finals...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-r from-teal-400 to-teal-600 flex items-center justify-center">
+            <span class="text-white text-lg font-semibold">Health</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">Health</span>
+              <span class="text-gray-500 text-sm ml-auto">1 day ago</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600 transition-colors">
+              <a href="#">New Health Initiative Launched</a>
+            </h3>
+            <p class="text-gray-600 mb-4">A comprehensive health program has been introduced to improve community wellness and access to care...</p>
+            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read more →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Load More Articles
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>
