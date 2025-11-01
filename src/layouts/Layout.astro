@@ -1,0 +1,60 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = "Stay updated with the latest news", image = "/favicon.svg" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={image} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">
+          <a href="/">My News Site</a>
+        </h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="/" class="text-gray-700 hover:text-blue-600">Home</a></li>
+            <li><a href="/articles" class="text-gray-700 hover:text-blue-600">Articles</a></li>
+            <li><a href="/about" class="text-gray-700 hover:text-blue-600">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 My News Site. All rights reserved.</p>
+        <div class="mt-4">
+          <a href="/privacy" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+          <a href="/terms" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+          <a href="/contact" class="text-gray-400 hover:text-white mx-2">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
