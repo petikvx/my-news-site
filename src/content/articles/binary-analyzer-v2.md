@@ -1,27 +1,27 @@
 ---
-title: "Binary Analyzer v2.0 : Analyse Automatisée de Binaires"
-description: "Présentation de la nouvelle version de Binary Analyzer avec reconnaissance automatique de patterns, analyse assistée par IA et capacités améliorées de désassemblage."
+title: "Binary Analyzer v2.0: Automated Binary Analysis"
+description: "Introducing the new version of Binary Analyzer with automatic pattern recognition, AI-assisted analysis and enhanced disassembly capabilities."
 pubDate: "2025-11-01"
 category: "Tool Release"
-tags: ["outil", "analyse", "reverse engineering", "IA", "open source"]
+tags: ["tool", "analysis", "reverse engineering", "AI", "open source"]
 author: "PetiKVX"
 image: "/images/binary-analyzer.jpg"
 ---
 
-# Binary Analyzer v2.0 : Analyse Automatisée de Binaires
+# Binary Analyzer v2.0: Automated Binary Analysis
 
-## Nouvelles Fonctionnalités
+## New Features
 
-Binary Analyzer v2.0 apporte des améliorations significatives dans l'analyse de binaires malveillants et légitimes.
+Binary Analyzer v2.0 brings significant improvements in analyzing both malicious and legitimate binaries.
 
-## Reconnaissance Automatique de Patterns
+## Automatic Pattern Recognition
 
-### Algorithmes Implémentés
+### Implemented Algorithms
 
 ```python
 def detect_encryption_patterns(binary_data):
     """
-    Détection automatique d'algorithmes de chiffrement
+    Automatic detection of encryption algorithms
     """
     patterns = {
         'AES': b'\\x63\\x7c\\x77\\x7b\\xf2\\x6b\\x6f\\xc5',
@@ -35,18 +35,18 @@ def detect_encryption_patterns(binary_data):
     return None
 ```
 
-### Analyse de Chaînes
+### String Analysis
 
-- **Extraction automatique** des chaînes de caractères
-- **Classification** par type (URLs, chemins, clés API)
-- **Corrélation** avec des bases de données de signatures
+- **Automatic extraction** of character strings
+- **Classification** by type (URLs, paths, API keys)
+- **Correlation** with signature databases
 
-## Interface Assistée par IA
+## AI-Assisted Interface
 
-### Analyse Prédictive
+### Predictive Analysis
 
 ```javascript
-// Exemple d'intégration IA conceptuelle
+// Conceptual AI integration example
 const analyzer = new BinaryAnalyzer();
 
 analyzer.on('pattern_detected', (pattern) => {
@@ -57,31 +57,31 @@ analyzer.on('pattern_detected', (pattern) => {
     });
 
     if (prediction.confidence > 0.8) {
-        console.log(`Pattern suspect détecté: ${prediction.type}`);
+        console.log(`Suspicious pattern detected: ${prediction.type}`);
     }
 });
 ```
 
-## Capacités de Désassemblage
+## Disassembly Capabilities
 
-### Support Multi-Architecture
+### Multi-Architecture Support
 
-- **x86/x64** : Support complet avec extensions AVX
-- **ARM** : Architecture 32/64 bits
-- **MIPS** : Big/Little endian
+- **x86/x64**: Full support with AVX extensions
+- **ARM**: 32/64-bit architecture
+- **MIPS**: Big/Little endian
 
-### Analyse de Flux de Contrôle
+### Control Flow Analysis
 
-- **Graphes de flux** interactifs
-- **Détection de fonctions** cachées
-- **Analyse de branches** conditionnelles
+- Interactive **flow graphs**
+- **Hidden function** detection
+- Conditional **branch analysis**
 
-## Intégration avec Autres Outils
+## Integration with Other Tools
 
-### API REST
+### REST API
 
 ```bash
-# Exemple d'utilisation de l'API
+# API usage example
 curl -X POST http://localhost:8080/analyze \
   -H "Content-Type: application/json" \
   -d '{"file": "malware.exe", "options": {"deep_analysis": true}}'
@@ -89,39 +89,39 @@ curl -X POST http://localhost:8080/analyze \
 
 ### Plugins
 
-- **Support de plugins** personnalisés
-- **Intégration YARA** pour les signatures
-- **Export** vers différents formats (JSON, XML, CSV)
+- Custom **plugin support**
+- **YARA integration** for signatures
+- **Export** to different formats (JSON, XML, CSV)
 
-## Performances et Sécurité
+## Performance and Security
 
-### Optimisations
+### Optimizations
 
-- **Traitement parallèle** des gros fichiers
-- **Cache intelligent** des analyses précédentes
-- **Utilisation mémoire** optimisée
+- **Parallel processing** of large files
+- **Smart caching** of previous analyses
+- Optimized **memory usage**
 
-### Sécurité
+### Security
 
-- **Sandboxing** des binaires analysés
-- **Validation** des entrées utilisateur
-- **Logs** d'audit complets
+- **Sandboxing** of analyzed binaries
+- **Validation** of user inputs
+- Complete **audit logs**
 
-## Installation et Utilisation
+## Installation and Usage
 
-### Installation Rapide
+### Quick Installation
 
 ```bash
-# Installation via pip
+# Install via pip
 pip install binary-analyzer
 
-# Ou depuis les sources
+# Or from source
 git clone https://github.com/petikvx/binary-analyzer.git
 cd binary-analyzer
 pip install -e .
 ```
 
-### Exemple d'Utilisation
+### Usage Example
 
 ```python
 from binary_analyzer import Analyzer
@@ -129,23 +129,23 @@ from binary_analyzer import Analyzer
 analyzer = Analyzer()
 result = analyzer.analyze('suspicious_file.exe')
 
-print(f"Type détecté: {result.type}")
-print(f"Score de confiance: {result.confidence}")
-print(f"Fonctions suspectes: {len(result.suspicious_functions)}")
+print(f"Detected type: {result.type}")
+print(f"Confidence score: {result.confidence}")
+print(f"Suspicious functions: {len(result.suspicious_functions)}")
 ```
 
 ## Roadmap
 
 ### Version 2.1 (Q1 2026)
 
-- Support WebAssembly
-- Intégration machine learning avancée
-- Interface web moderne
+- WebAssembly support
+- Advanced machine learning integration
+- Modern web interface
 
 ### Contributions
 
-Le projet est open source et accepte les contributions. Les pull requests sont les bienvenues !
+The project is open source and welcomes contributions. Pull requests are welcome!
 
 ---
 
-*Binary Analyzer est disponible sur [GitHub](https://github.com/petikvx/binary-analyzer). N'hésitez pas à contribuer ou signaler des bugs.*
+*Binary Analyzer is available on [GitHub](https://github.com/petikvx/binary-analyzer). Feel free to contribute or report bugs.*
