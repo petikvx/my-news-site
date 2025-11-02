@@ -2,189 +2,218 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About - My News Site" description="Learn more about My News Site, our mission, and commitment to delivering quality news.">
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-6">About PetiKVX</h1>
-      <p class="text-xl text-indigo-100 max-w-2xl mx-auto leading-relaxed">
-        Cybersecurity researcher specialized in malware analysis and open source tool development.
-      </p>
-    </div>
-  </section>
-
-  <!-- Mission Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">My Mission</h2>
-          <p class="text-gray-600 text-lg">Understanding and combating cyber threats</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Why I Do What I Do</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              As a junior malware researcher, I dedicate myself to the in-depth analysis of malware mechanisms
-              and the development of tools to better understand and counter these threats.
-            </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              My goal is to contribute to the cybersecurity community by sharing my knowledge,
-              developing open source tools, and raising awareness about modern cyber risks.
-            </p>
-            <div class="flex items-center space-x-4">
-              <div class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-gray-700">Malware analysis</span>
-              </div>
-              <div class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-gray-700">Tool development</span>
-              </div>
+<Layout 
+  title="About - PetiKVX | Cybersecurity Researcher" 
+  description="Learn about PetiKVX, a cybersecurity researcher specialized in malware analysis, reverse engineering, and open source security tools development."
+>
+  <div class="relative min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-blue-500/10"></div>
+      <div class="relative container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="flex justify-center mb-8">
+            <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center shadow-xl shadow-green-500/30 animate-pulse">
+              <span class="text-black font-bold text-5xl">P</span>
             </div>
           </div>
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
-            <div class="text-center">
-              <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-              </div>
-              <h4 class="text-xl font-semibold text-gray-800 mb-4">Cybersecurity Research</h4>
-              <p class="text-gray-600">Specialized in ransomware analysis, reverse engineering, and developing cybersecurity tools.</p>
-            </div>
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
+            About PetiKVX
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-mono">
+            Cybersecurity Researcher • Malware Analyst • Open Source Developer
+          </p>
+          <div class="flex justify-center space-x-6 mt-8">
+            <a href="https://github.com/petikvx" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-green-500/20 border border-green-500/30 hover:border-green-400 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span class="text-green-400 font-mono">GitHub</span>
+            </a>
+            <a href="https://x.com/petikvx" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-green-500/20 border border-green-500/30 hover:border-green-400 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              <span class="text-green-400 font-mono">X / Twitter</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- What We Cover Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">My Areas of Expertise</h2>
-          <p class="text-gray-600 text-lg">Specialization in cybersecurity and malware analysis</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
+    <!-- Mission Section -->
+    <section class="py-16 relative">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-gray-900/60 backdrop-blur-md border border-green-500/20 rounded-2xl p-8 md:p-12 shadow-xl shadow-green-500/10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-mono">
+              > Mission Statement
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <p class="text-gray-300 leading-relaxed mb-6 font-mono text-lg">
+                  My mission is to advance cybersecurity through <span class="text-green-400">open research</span>, 
+                  <span class="text-blue-400">practical tool development</span>, and 
+                  <span class="text-purple-400">knowledge sharing</span>.
+                </p>
+                <p class="text-gray-300 leading-relaxed font-mono">
+                  I believe in making cybersecurity knowledge accessible to everyone, 
+                  contributing to the community through open source projects, and 
+                  helping organizations better understand and defend against cyber threats.
+                </p>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800">Malware Analysis</h3>
-            </div>
-            <p class="text-gray-600 leading-relaxed">In-depth study of malware mechanisms, reverse engineering and understanding of cyber attack techniques.</p>
-          </div>
-
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-800">Tool Development</h3>
-            </div>
-            <p class="text-gray-600 leading-relaxed">Creation of open source tools for malware analysis, automation of security tasks and education.</p>
-          </div>
-
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-800">Ransomware</h3>
-            </div>
-            <p class="text-gray-600 leading-relaxed">Specialization in the analysis and reverse engineering of ransomware, understanding their encryption mechanisms.</p>
-          </div>
-
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-800">Open Source</h3>
-            </div>
-            <p class="text-gray-600 leading-relaxed">Active contribution to the open source community with educational projects and accessible cybersecurity tools.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
-          <p class="text-gray-600 text-lg">Interested in cybersecurity or have questions about my research? I'd love to hear from you.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
-                </svg>
-                <div>
-                  <p class="font-medium text-gray-800">Discord</p>
-                  <p class="text-gray-600">petikvx#9815</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-                <div>
-                  <p class="font-medium text-gray-800">GitHub</p>
-                  <p class="text-gray-600">@petikvx</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <svg class="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
-                </svg>
-                <div>
-                  <p class="font-medium text-gray-800">Portfolio</p>
-                  <p class="text-gray-600">petikvx.github.io</p>
+              <div class="text-center">
+                <div class="inline-block p-6 bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-xl border border-green-500/30">
+                  <div class="text-4xl mb-4">🛡️</div>
+                  <div class="text-green-400 font-mono text-sm uppercase tracking-wider">Defend • Analyze • Share</div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="bg-gray-50 p-8 rounded-xl">
-            <h3 class="text-xl font-semibold mb-6 text-gray-800">Send me a message</h3>
-            <p class="text-gray-600 mb-6">Whether it's questions about cybersecurity, collaborations, or just to discuss my research.</p>
-            <div class="space-y-4">
-              <a href="https://x.com/petikvx" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                Me suivre sur X
-              </a>
-              <a href="https://github.com/petikvx" target="_blank" rel="noopener noreferrer" class="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors duration-300 flex items-center justify-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                View my GitHub projects
-              </a>
+    <!-- Expertise Section -->
+    <section class="py-16 relative">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-mono">
+            > Technical Expertise
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Malware Analysis -->
+            <div class="bg-gray-900/60 backdrop-blur-md border border-green-500/20 rounded-xl p-6 hover:border-green-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center border border-red-500/30">
+                  <span class="text-2xl">🦠</span>
+                </div>
+                <h3 class="text-xl font-bold ml-4 text-green-400 font-mono">Malware Analysis</h3>
+              </div>
+              <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                <li class="flex items-center"><span class="text-green-400 mr-2">></span>Static & Dynamic Analysis</li>
+                <li class="flex items-center"><span class="text-green-400 mr-2">></span>Reverse Engineering</li>
+                <li class="flex items-center"><span class="text-green-400 mr-2">></span>Behavior Analysis</li>
+                <li class="flex items-center"><span class="text-green-400 mr-2">></span>IOC Extraction</li>
+                <li class="flex items-center"><span class="text-green-400 mr-2">></span>Family Classification</li>
+              </ul>
+            </div>
+
+            <!-- Security Research -->
+            <div class="bg-gray-900/60 backdrop-blur-md border border-blue-500/20 rounded-xl p-6 hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center border border-blue-500/30">
+                  <span class="text-2xl">🔬</span>
+                </div>
+                <h3 class="text-xl font-bold ml-4 text-blue-400 font-mono">Security Research</h3>
+              </div>
+              <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                <li class="flex items-center"><span class="text-blue-400 mr-2">></span>Vulnerability Research</li>
+                <li class="flex items-center"><span class="text-blue-400 mr-2">></span>Zero-day Analysis</li>
+                <li class="flex items-center"><span class="text-blue-400 mr-2">></span>Exploit Development</li>
+                <li class="flex items-center"><span class="text-blue-400 mr-2">></span>IoT Security</li>
+                <li class="flex items-center"><span class="text-blue-400 mr-2">></span>Network Security</li>
+              </ul>
+            </div>
+
+            <!-- Tool Development -->
+            <div class="bg-gray-900/60 backdrop-blur-md border border-purple-500/20 rounded-xl p-6 hover:border-purple-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center border border-purple-500/30">
+                  <span class="text-2xl">⚙️</span>
+                </div>
+                <h3 class="text-xl font-bold ml-4 text-purple-400 font-mono">Tool Development</h3>
+              </div>
+              <ul class="space-y-2 text-gray-300 font-mono text-sm">
+                <li class="flex items-center"><span class="text-purple-400 mr-2">></span>Binary Analyzers</li>
+                <li class="flex items-center"><span class="text-purple-400 mr-2">></span>Automation Scripts</li>
+                <li class="flex items-center"><span class="text-purple-400 mr-2">></span>Detection Rules</li>
+                <li class="flex items-center"><span class="text-purple-400 mr-2">></span>YARA Signatures</li>
+                <li class="flex items-center"><span class="text-purple-400 mr-2">></span>Open Source Projects</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-16 relative">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-mono">
+            > Technology Stack
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-900/60 backdrop-blur-md border border-green-500/20 rounded-xl p-6">
+              <h3 class="text-xl font-bold mb-4 text-green-400 font-mono">Analysis Tools</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">IDA Pro</span>
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">Ghidra</span>
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">x64dbg</span>
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">Wireshark</span>
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">Volatility</span>
+                <span class="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-sm font-mono border border-green-500/30">YARA</span>
+              </div>
+            </div>
+            <div class="bg-gray-900/60 backdrop-blur-md border border-blue-500/20 rounded-xl p-6">
+              <h3 class="text-xl font-bold mb-4 text-blue-400 font-mono">Programming</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">Python</span>
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">C/C++</span>
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">Assembly</span>
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">PowerShell</span>
+                <span class="px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm font-mono border border-blue-500/30">Bash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 relative">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-mono">
+            > Get In Touch
+          </h2>
+          <p class="text-xl text-gray-300 mb-8 font-mono">
+            Interested in collaboration, research discussions, or cybersecurity topics?
+          </p>
+          <div class="flex justify-center space-x-6">
+            <a href="https://github.com/petikvx" target="_blank" rel="noopener noreferrer" 
+               class="group flex items-center px-8 py-4 bg-gray-800 hover:bg-green-500/20 border border-green-500/30 hover:border-green-400 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              <svg class="w-6 h-6 mr-3 text-green-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span class="text-green-400 font-mono font-semibold">Explore Projects</span>
+            </a>
+            <a href="https://x.com/petikvx" target="_blank" rel="noopener noreferrer" 
+               class="group flex items-center px-8 py-4 bg-gray-800 hover:bg-blue-500/20 border border-blue-500/30 hover:border-blue-400 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+              <svg class="w-6 h-6 mr-3 text-blue-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              <span class="text-blue-400 font-mono font-semibold">Follow Updates</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Binary Footer -->
+    <section class="py-8 relative">
+      <div class="container mx-auto px-4 text-center">
+        <div class="bg-gray-900/60 backdrop-blur-md border border-green-500/20 rounded-xl p-6 max-w-2xl mx-auto">
+          <p class="text-green-400 font-mono text-sm mb-2">System.out.println("Thanks for visiting!");</p>
+          <p class="text-gray-500 font-mono text-xs">
+            01010100 01101000 01100001 01101110 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110010 01100101 01100001 01100100 01101001 01101110 01100111
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </Layout>
