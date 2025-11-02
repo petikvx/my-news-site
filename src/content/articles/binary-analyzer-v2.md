@@ -24,9 +24,9 @@ def detect_encryption_patterns(binary_data):
     Automatic detection of encryption algorithms
     """
     patterns = {
-        'AES': b'\\x63\\x7c\\x77\\x7b\\xf2\\x6b\\x6f\\xc5',
-        'RSA': b'\\x30\\x81\\x9f\\x30\\x0d\\x06\\x09',
-        'DES': b'\\x01\\x23\\x45\\x67\\x89\\xab\\xcd\\xef'
+        'AES': b'\x63\x7c\x77\x7b\xf2\x6b\x6f\xc5',
+        'RSA': b'\x30\x81\x9f\x30\x0d\x06\x09',
+        'DES': b'\x01\x23\x45\x67\x89\xab\xcd\xef'
     }
 
     for algo, pattern in patterns.items():
