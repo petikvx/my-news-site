@@ -5,7 +5,10 @@ export interface Props {
   image?: string;
 }
 
-const { title, description = "Stay updated with the latest news", image = "/my-new-site/favicon.svg" } = Astro.props;
+let base = import.meta.env.BASE_URL || "/";
+// Ensure base always ends with a trailing slash for safe concatenation
+if (!base.endsWith('/')) base = base + '/';
+const { title, description = "Stay updated with the latest news", image = `${base}favicon.svg` } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -43,17 +46,17 @@ const { title, description = "Stay updated with the latest news", image = "/my-n
               <span class="text-black font-bold text-lg">P</span>
             </div>
             <h1 class="text-2xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
-              <a href="/" class="hover:text-green-300 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,255,150,0.5)]">PetiKVX</a>
+              <a href={base} class="hover:text-green-300 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,255,150,0.5)]">PetiKVX</a>
             </h1>
           </div>
 
           <nav class="hidden md:flex">
             <ul class="flex space-x-8">
-              <li><a href="/my-new-site/" class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">HOME
+              <li><a href={base} class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">HOME
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
-              <li><a href="/my-new-site/articles/" class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">ARTICLES
+              <li><a href={`${base}articles/`} class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">ARTICLES
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
-              <li><a href="/my-new-site/about/" class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">ABOUT
+              <li><a href={`${base}about/`} class="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group text-sm tracking-wider">ABOUT
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
             </ul>
           </nav>
@@ -69,9 +72,9 @@ const { title, description = "Stay updated with the latest news", image = "/my-n
         <!-- Mobile menu -->
         <div class="md:hidden mt-4 pb-4 border-t border-green-500/20 hidden" id="mobile-menu">
           <ul class="flex flex-col space-y-3 pt-4">
-            <li><a href="/my-new-site/" class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">HOME</a></li>
-            <li><a href="/my-new-site/articles/" class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">ARTICLES</a></li>
-            <li><a href="/my-new-site/about/" class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">ABOUT</a></li>
+            <li><a href={base} class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">HOME</a></li>
+            <li><a href={`${base}articles/`} class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">ARTICLES</a></li>
+            <li><a href={`${base}about/`} class="text-gray-300 hover:text-green-400 font-medium block py-2 text-sm tracking-wider">ABOUT</a></li>
           </ul>
         </div>
       </div>
@@ -114,19 +117,18 @@ const { title, description = "Stay updated with the latest news", image = "/my-n
           <div>
             <h4 class="text-lg font-semibold mb-4 text-green-400 font-mono">NAVIGATION</h4>
             <ul class="space-y-2">
-              <li><a href="/my-new-site/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">HOME</a></li>
-              <li><a href="/my-new-site/articles/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">ARTICLES</a></li>
-              <li><a href="/my-new-site/about/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">ABOUT</a></li>
-              <li><a href="/my-new-site/contact/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">CONTACT</a></li>
+              <li><a href={base} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">HOME</a></li>
+              <li><a href={`${base}articles/`} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">ARTICLES</a></li>
+              <li><a href={`${base}about/`} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">ABOUT</a></li>
+              <li><a href={`${base}contact/`} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">CONTACT</a></li>
             </ul>
           </div>
 
           <div>
             <h4 class="text-lg font-semibold mb-4 text-green-400 font-mono">RESOURCES</h4>
             <ul class="space-y-2">
-              <li><a href="/my-new-site/privacy/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">PRIVACY</a></li>
-              <li><a href="/my-new-site/terms/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">TERMS</a></li>
-              <li><a href="/my-new-site/cookies/" class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">COOKIES</a></li>
+              <li><a href={`${base}privacy/`} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">PRIVACY</a></li>
+              <li><a href={`${base}cookies/`} class="text-gray-400 hover:text-green-400 transition-colors font-mono text-sm">COOKIES</a></li>
             </ul>
           </div>
         </div>
